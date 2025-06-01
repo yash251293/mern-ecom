@@ -1,4 +1,6 @@
 require('dotenv').config(); // To load environment variables from .env file
+console.log('DEBUG: MONGO_URI from process.env:', process.env.MONGO_URI);
+console.log('DEBUG: PORT from process.env:', process.env.PORT);
 const express = require('express');
 const mongoose = require('mongoose'); // Require Mongoose
 const cors = require('cors'); // Corrected: require('cors') not new require('cors')
@@ -40,3 +42,6 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+EOF && \
+echo "backend/server.js has been overwritten with corrected content."
+EOF && echo "Added debugging console.log statements to backend/server.js."
