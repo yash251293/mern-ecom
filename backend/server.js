@@ -41,4 +41,4 @@ app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 EOF && \
-echo "MongoDB connection logic added to server.js."
+echo "backend/server.js has been overwritten with corrected content."
