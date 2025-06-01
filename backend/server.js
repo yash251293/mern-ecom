@@ -40,5 +40,3 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-EOF && \
-echo "backend/server.js has been overwritten with corrected content."
